@@ -1,5 +1,4 @@
 # LiveTalkGooMorphSample
-![supported by goo](http://u.xgoo.jp/img/sgoo.png)
 LiveTalk常時ファイル出力で出力したテキストを、gooラボ 形態素解析API を使って形態素に分解するサンプルです。  
 発話内容の解析を行うための前処理などに活用できます。  
 本サンプルコードは、.NET Core 2.2で作成しています。コードレベルでは.NET Framework 4.6と互換性があります。
