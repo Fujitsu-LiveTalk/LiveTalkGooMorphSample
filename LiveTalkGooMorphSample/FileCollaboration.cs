@@ -7,7 +7,7 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LiveTalkGooMorphSample
+namespace LiveTalk
 {
     internal class FileCollaboration
     {
