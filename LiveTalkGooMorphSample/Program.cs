@@ -1,5 +1,5 @@
 ﻿/*
- * Copyright 2019 FUJITSU SOCIAL SCIENCE LABORATORY LIMITED
+ * Copyright 2019 FUJITSU LIMITED
  * システム名：LiveTalkGooMorphSample
  * 概要      ：LiveTalk-gooラボ形態素解析API連携サンプルアプリ
 */

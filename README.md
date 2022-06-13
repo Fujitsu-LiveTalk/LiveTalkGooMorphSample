@@ -1,7 +1,7 @@
 # LiveTalkGooMorphSample
 LiveTalk常時ファイル出力で出力したテキストを、gooラボ 形態素解析API を使って形態素に分解するサンプルです。  
 発話内容の解析を行うための前処理などに活用できます。  
-本サンプルコードは、.NET Core 3.0で作成しています。コードレベルでは.NET Framework 4.6と互換性があります。
+本サンプルコードは、.NET 6.0で作成しています。コードレベルでは.NET Framework 4.6と互換性があります。
 
 ![Process](https://github.com/FujitsuSSL-LiveTalk/LiveTalkGooMorphSample/blob/images/README.png)
 
