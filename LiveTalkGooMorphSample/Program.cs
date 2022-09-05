@@ -40,10 +40,11 @@ namespace LiveTalkGooMorphSample
                 var items = reg.Split(s);
 
                 Console.WriteLine(">>>>>>>");
-                Console.WriteLine("DateTime:" + items[0]);
-                Console.WriteLine("Speaker:" + items[1]);
-                Console.WriteLine("Speech contents:" + items[2]);
-                Console.WriteLine("Translate content:" + items[3]);
+                Console.WriteLine($"DateTime:{items[0]}");
+                Console.WriteLine($"Speaker:{items[1]}");
+                Console.WriteLine($"Speech contents:{items[2]}");
+                Console.WriteLine($"Translate content:{items[3]}");
+                Console.WriteLine("↓");
 
                 var item = items[3] == "\"\"" ? items[2] : items[3];
                 item = item.Length >= 2 ? item.Substring(1, item.Length - 2) : string.Empty;
