@@ -30,7 +30,8 @@ namespace LiveTalkGooMorphSample.Models
                 var param = new TReqest() {
                     app_id = APIKey,
                     sentence = text,
-                    info_filter = "form"
+                    info_filter = "form",
+                    pos_filter = "名詞|冠名詞"
                 };
 
                 // プロキシ設定
@@ -75,9 +76,12 @@ namespace LiveTalkGooMorphSample.Models
                                 {
                                     var result = ser.ReadObject(json) as TResponse;
                                     var morph = new List<string>();
-                                    for (var index = 0; index < result.word_list[0].Length; index++)
+                                    foreach (var items in result.word_list)
                                     {
-                                        morph.Add(result.word_list[0][index][0]);
+                                        foreach (var item in items)
+                                        {
+                                            morph.Add(item[0]);
+                                        }
                                     }
                                     return (morph, string.Empty);
                                 }
@@ -106,6 +110,8 @@ namespace LiveTalkGooMorphSample.Models
             public string sentence { get; set; }
             [DataMember]
             public string info_filter { get; set; }
+            [DataMember]
+            public string pos_filter { get; set; }
         }
 
 
